@@ -1,21 +1,48 @@
 import React from 'react';
 
-export default function AboutUs() {
+function AboutUs() {
   return (
-    <section style={{padding: '2rem', maxWidth: 800, margin: '0 auto'}}>
-      <h1>Green Haven Plant Shop</h1>
-      <p>
-        Green Haven is a family-owned plant shop specializing in easy-care
-        houseplants and sustainable potting supplies. We curate healthy,
-        pet-friendly, and low-maintenance plants for every room.
-      </p>
-      <h2>Our Mission</h2>
-      <p>
-        To make plant ownership accessible, beautiful, and beneficial for
-        wellbeing and indoor air quality.
-      </p>
-      <h2>Contact</h2>
-      <p>Email: hello@greenhaven.example • Phone: (555) 123-PLNT</p>
-    </section>
+    <div className="about-us-container">
+      <div className="about-us-content">
+        <h2>Welcome to Paradise Nursery</h2>
+        <div className="mission-statement">
+          <p>
+            Our mission is to reconnect people with the healing power of nature
+            through the beauty of plants. We believe that every home deserves
+            a touch of greenery.
+          </p>
+        </div>
+        <div className="about-us-image">
+          <img
+            src="https://images.unsplash.com/photo-1530968033775-2c92736b131e?auto=format&fit=crop&w=600&q=80"
+            alt="Paradise Nursery"
+            style={{ width: '100%', borderRadius: 12, marginBottom: '1rem' }}
+          />
+        </div>
+        <div className="about-us-description">
+          <p>
+            <strong>Paradise Nursery</strong> is where nature meets your home.
+            We believe that plants not only beautify our living spaces but also
+            contribute to mental well-being. Our team of passionate botanists
+            and plant enthusiasts curates a wide selection of plants — from
+            air-purifying wonders to stunning blooms — making it easy for
+            everyone to find their perfect plant companion.
+          </p>
+          <p>
+            Our goal is simple: to make plant ownership accessible, enjoyable,
+            and sustainable. We provide comprehensive care guides and dedicated
+            customer support to ensure your plants thrive. Join our community
+            of plant lovers and let's grow together!
+          </p>
+          <p>
+            Whether you are a seasoned gardener or just starting your plant
+            journey, Paradise Nursery offers something for everyone. Visit us
+            today and bring the beauty of nature into your life.
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }
+
+export default AboutUs;
